@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TriPrompt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#f8fafc',
+                100: '#f1f5f9',
+                500: '#64748b', // Slate-like brand for "Cognitive" feel
+                600: '#475569',
+                900: '#0f172a',
+              },
+              accent: {
+                500: '#3b82f6', // Blue for actions
+                600: '#2563eb'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      ::-webkit-scrollbar { width: 6px; height: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+      ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+      body { -webkit-font-smoothing: antialiased; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.2/",
+    "react": "https://aistudiocdn.com/react@^19.2.2",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.2/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.33.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.0.8"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-900 font-sans overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>
